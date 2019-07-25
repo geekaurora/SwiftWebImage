@@ -107,9 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				C35BD2DC22E9F45D003AF271 /* SwiftImage.swift */,
+				C35BD2DB22E9F45D003AF271 /* SwiftImageDownloader.swift */,
 				C35BD2C622E9F3E2003AF271 /* Utils */,
 				C35BD2C522E9F3DA003AF271 /* Supported Files */,
-				C35BD2AB22E9F38D003AF271 /* SwiftWebImage.h */,
 				C35BD2AC22E9F38D003AF271 /* Info.plist */,
 			);
 			path = SwiftWebImage;
@@ -127,6 +127,7 @@
 		C35BD2C522E9F3DA003AF271 /* Supported Files */ = {
 			isa = PBXGroup;
 			children = (
+				C35BD2AB22E9F38D003AF271 /* SwiftWebImage.h */,
 			);
 			path = "Supported Files";
 			sourceTree = "<group>";
@@ -135,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				C32781A922E9F737000FA22C /* CZWebImage.xcodeproj */,
-				C35BD2DB22E9F45D003AF271 /* SwiftImageDownloader.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";

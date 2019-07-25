@@ -23,9 +23,7 @@ public struct SwiftImage: View {
     }
     
     public var body: some View {
-        guard let image = imageDownloader.image else {
-            return AnyView(EmptyView())
-        }
+        let image: UIImage = imageDownloader.image ?? UIImage()
         let imageView = Image(uiImage: image)
         if let config = config {
             return config(imageView)
