@@ -11,7 +11,7 @@ With neat APIs, performant LRU mem/disk cache. Supports cropping image in backgr
  
 ### Simple Usage
 
-Just `import SwiftWebImage` and set `imageUrl` for `SwiftImage`:
+Just `import SwiftWebImage` and set `url` for `SwiftImage`:
 
 ```swift
 import SwiftWebImage
@@ -19,23 +19,23 @@ import SwiftWebImage
 var body: some View {
     List {
         ForEach(Feed.list.identified(by: \.id)) { feed in
-        	  // Set `imageUrl` for `SwiftImage`
-            SwiftImage(imageUrl: feed.imageUrl)
+            // Set `url` for `SwiftImage`
+            SwiftImage(url: feed.imageUrl)
         }
     }
-}                        
+}                       
 ```
 
 Framework will automatically load Image with `@ObjectBinding` data once download completes.
 
-#### How to config Image? 
-Trailing `config` block of `SwiftImage` is used for Image configuration:
+#### How to config ImageView? 
+Trailing `config` block of `SwiftImage` is used for underlying ImageView configuration:
 
 ```swift
 var body: some View {
     List {
         ForEach(Feed.list.identified(by: \.id)) { feed in
-            SwiftImage(imageUrl: feed.imageUrl) { imageView in
+            SwiftImage(url: feed.imageUrl) { imageView in
                 AnyView(
                     imageView
                         .frame(height: 300)

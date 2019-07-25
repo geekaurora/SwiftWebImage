@@ -17,12 +17,12 @@ public struct SwiftImage: View {
     private let placeholder: UIImage
     private let config: Config?
 
-    public init(imageUrl: String?,
+    public init(url: String?,
                 placeholder: UIImage = UIImage(),
                 config: Config? = nil) {
         self.placeholder = placeholder
         self.config = config
-        imageDownloader.download(imageUrl: imageUrl)
+        imageDownloader.download(url: url)
     }
     
     public var body: some View {

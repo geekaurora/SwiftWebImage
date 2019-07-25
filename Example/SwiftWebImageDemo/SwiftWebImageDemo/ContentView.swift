@@ -28,7 +28,7 @@ struct ContentView : View {
         
         List {
             ForEach(Feed.list.identified(by: \.id)) { feed in
-                SwiftImage(imageUrl: feed.imageUrl) { imageView in
+                SwiftImage(url: feed.imageUrl) { imageView in
                     /**
                      Return `AnyView` to be compatible with non-`Image type, e.g. Modified<_FrameLayout> when set frame
                      

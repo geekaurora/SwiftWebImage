@@ -10,9 +10,9 @@ import Combine
 import CZWebImage
 
 class SwiftImageDownloader: BindableObject {
-
+    
     var didChange = PassthroughSubject<UIImage?, Never>()
-    private var imageUrl: String?
+    private var url: String?
     
     var image: UIImage? {
         didSet {
@@ -20,16 +20,16 @@ class SwiftImageDownloader: BindableObject {
         }
     }
     
-    func download(imageUrl: String?) {
+    func download(url: String?) {
         // Fetch image data and then call didChange
-        self.imageUrl = imageUrl
-        guard let imageUrl = imageUrl,
-            let url = URL(string: imageUrl) else {
+        self.url = url
+        guard let url = url,
+            let imageUrl = URL(string: url) else {
                 return
         }        
-        CZWebImageManager.shared.downloadImage(with: url) { (image, error, fromCache) in
+        CZWebImageManager.shared.downloadImage(with: imageUrl) { (image, error, fromCache) in
             // Verify download imageUrl matches the original one
-            guard self.imageUrl == imageUrl else {
+            guard self.url == url else {
                 return
             }
             self.image = image
