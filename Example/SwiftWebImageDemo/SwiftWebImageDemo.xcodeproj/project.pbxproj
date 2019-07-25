@@ -122,11 +122,7 @@
 		C3A5349922E9F95F0099CE0C /* SwiftWebImageDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C3A5349A22E9F95F0099CE0C /* AppDelegate.swift */,
-				C3A5349C22E9F95F0099CE0C /* SceneDelegate.swift */,
 				C3A5349E22E9F95F0099CE0C /* ContentView.swift */,
-				C3A534A022E9F9610099CE0C /* Assets.xcassets */,
-				C3A534A522E9F9610099CE0C /* LaunchScreen.storyboard */,
 				C3A534A822E9F9610099CE0C /* Info.plist */,
 				C3A534CA22E9F9940099CE0C /* Supported Files */,
 				C3A534A222E9F9610099CE0C /* Preview Content */,
@@ -163,6 +159,10 @@
 		C3A534CA22E9F9940099CE0C /* Supported Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3A5349A22E9F95F0099CE0C /* AppDelegate.swift */,
+				C3A5349C22E9F95F0099CE0C /* SceneDelegate.swift */,
+				C3A534A022E9F9610099CE0C /* Assets.xcassets */,
+				C3A534A522E9F9610099CE0C /* LaunchScreen.storyboard */,
 			);
 			path = "Supported Files";
 			sourceTree = "<group>";
