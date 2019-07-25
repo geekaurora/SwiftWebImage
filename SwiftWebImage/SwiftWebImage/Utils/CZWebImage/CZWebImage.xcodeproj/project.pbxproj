@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2A02BFF11F7461EA00184823 /* CZWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A02BFE71F7461EA00184823 /* CZWebImage.framework */; };
-		2A02BFF61F7461EA00184823 /* CZWebImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A02BFF51F7461EA00184823 /* CZWebImageTests.swift */; };
 		2AC0F4011F8204C100B2A3B8 /* CZWebImageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC0F4001F8204C100B2A3B8 /* CZWebImageOption.swift */; };
 		2AD471EC1F7EC24400EEE87B /* CZWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD471EA1F7EC24400EEE87B /* CZWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AD471F71F7EC2B200EEE87B /* CZImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD471EE1F7EC2B200EEE87B /* CZImageCache.swift */; };
@@ -56,8 +55,6 @@
 /* Begin PBXFileReference section */
 		2A02BFE71F7461EA00184823 /* CZWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CZWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A02BFF01F7461EA00184823 /* CZWebImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZWebImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A02BFF51F7461EA00184823 /* CZWebImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZWebImageTests.swift; sourceTree = "<group>"; };
-		2A02BFF71F7461EA00184823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AC0F4001F8204C100B2A3B8 /* CZWebImageOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CZWebImageOption.swift; path = CZWebImage/Utils/CZWebImageOption.swift; sourceTree = SOURCE_ROOT; };
 		2AD471EA1F7EC24400EEE87B /* CZWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZWebImage.h; path = "Supported Files/CZWebImage.h"; sourceTree = "<group>"; };
 		2AD471EB1F7EC24400EEE87B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supported Files/Info.plist"; sourceTree = "<group>"; };
@@ -97,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				2A02BFE91F7461EA00184823 /* CZWebImage */,
-				2A02BFF41F7461EA00184823 /* CZWebImageTests */,
 				2A02BFE81F7461EA00184823 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,15 +122,6 @@
 				2AB505E21F7E14AE0035B59B /* Supported Files */,
 			);
 			path = CZWebImage;
-			sourceTree = "<group>";
-		};
-		2A02BFF41F7461EA00184823 /* CZWebImageTests */ = {
-			isa = PBXGroup;
-			children = (
-				2A02BFF51F7461EA00184823 /* CZWebImageTests.swift */,
-				2A02BFF71F7461EA00184823 /* Info.plist */,
-			);
-			path = CZWebImageTests;
 			sourceTree = "<group>";
 		};
 		2A02C0301F74628700184823 /* Utils */ = {
@@ -323,7 +310,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A02BFF61F7461EA00184823 /* CZWebImageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
