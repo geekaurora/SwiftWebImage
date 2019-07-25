@@ -15,15 +15,19 @@ public struct SwiftImage: View {
     
     public typealias Config = (Image) -> AnyView
     
+    private let placeholder: UIImage
     private let config: Config?
-    
-    public init(imageUrl: String?, config: Config? = nil) {
+
+    public init(imageUrl: String?,
+                placeholder: UIImage = UIImage(),
+                config: Config? = nil) {
+        self.placeholder = placeholder
         self.config = config
         imageDownloader.download(imageUrl: imageUrl)
     }
     
     public var body: some View {
-        let image: UIImage = imageDownloader.image ?? UIImage()
+        let image: UIImage = imageDownloader.image ?? placeholder
         let imageView = Image(uiImage: image)
         if let config = config {
             return config(imageView)
