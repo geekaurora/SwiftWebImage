@@ -1,42 +1,52 @@
-# CZWebImage
+# SwiftWebImage
 
-![Swift Version](https://img.shields.io/badge/swift-3.2-orange.svg)
+![Swift Version](https://img.shields.io/badge/swift-5.0-orange.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/CZUtils.svg?style=flat)](http://cocoapods.org/pods/CZUtils)
 [![Platform](https://img.shields.io/cocoapods/p/CZUtils.svg?style=flat)](http://cocoapods.org/pods/CZUtils)
 
-Elegant progressive concurrent image downloading framework, with neat APIs, LRU mem/disk cache. Supports cropping image in background thread.
+Progressive concurrent image downloader for SwiftUI BindingObject.
 
-### How To Use
+With neat APIs, performant LRU mem/disk cache. Supports cropping image in background thread.
+ 
+### Simple Usage
 
-```objective-c
-Objective-C:
-
-#import <CZWebImage/CZWebImage.h>
-...
-[imageView cz_setImageWithURL:[NSURL URLWithString:@"http://www.domain.com/path/to/image.jpg"]
-             placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
-```
+Just `import SwiftWebImage` and set `imageUrl` for `SwiftImage`:
 
 ```swift
-Swift:
+import SwiftWebImage
 
-import CZWebImage
-
-// Liner to fetch imageUrl
-feedImageView.cz_setImage(with: imageUrl,
-                          placeholderImage: UIImage(named: "placeholder.png"))   
-                          
-// Set cropSize for image - will get done in background thread automatically after download
-feedImageView.cz_setImage(with: imageUrl,
-                          placeholderImage: UIImage(named: "placeholder.png"),
-                          cropSize: cropSize)                          
+var body: some View {
+    List {
+        ForEach(Feed.list.identified(by: \.id)) { feed in
+        	  // Set `imageUrl` for `SwiftImage`
+            SwiftImage(imageUrl: feed.imageUrl)
+        }
+    }
+}                        
 ```
 
-### Work Flow
-<img src="./Docs/CZWebImage-Sequence-Diagram.png">
+Framework will automatically load Image with `@ObjectBinding` data once download completes.
 
-### Instagram Demo - [Github](https://github.com/showt1me/CZInstagram)
-Implemented on top of **CZWebImage**
+#### How to config Image? 
+Trailing `config` block of `SwiftImage` is used for Image configuration:
+
+```swift
+var body: some View {
+    List {
+        ForEach(Feed.list.identified(by: \.id)) { feed in
+            SwiftImage(imageUrl: feed.imageUrl) { imageView in
+                AnyView(
+                    imageView
+                        .frame(height: 300)
+                        .clipped()
+                )
+            }
+        }
+    }
+}
+```
+
+### Demo
 
 <img src="./Docs/CZInstagram.gif">
