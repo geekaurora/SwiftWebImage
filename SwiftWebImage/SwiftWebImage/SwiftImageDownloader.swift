@@ -12,6 +12,7 @@ import CZWebImage
 class SwiftImageDownloader: BindableObject {
     
     var didChange = PassthroughSubject<UIImage?, Never>()
+    
     private var url: String?
     
     var image: UIImage? {
