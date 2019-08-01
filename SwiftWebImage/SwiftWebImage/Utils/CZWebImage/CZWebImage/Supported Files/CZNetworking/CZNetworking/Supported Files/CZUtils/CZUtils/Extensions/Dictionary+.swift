@@ -10,12 +10,12 @@ import Foundation
 
 public extension Dictionary {
     /// Retrieve value from `dotedKey`, compatible with multi-dot in keyPath. e.g. "user.profile.fullName"
-    public func value(forDotedKey dotedKey: String) -> Value? {
+    func value(forDotedKey dotedKey: String) -> Value? {
         return value(forSegmentedKey: dotedKey)
     }
 
     /// Retrieve value from `segmentedKey`, compatible with multi-segments separated by `splitter`. e.g. "user.profile.fullName", "user/profile/fullName"
-    public func value(forSegmentedKey segmentedKey: String, splitter: String = ".") -> Value? {
+    func value(forSegmentedKey segmentedKey: String, splitter: String = ".") -> Value? {
         var value: Any? = nil
         var dict: Dictionary? = self
 
@@ -30,21 +30,15 @@ public extension Dictionary {
     }
     
     /// Insert key/value pairs with input Dictionary
-    public mutating func insert(_ other: Dictionary) {
+    mutating func insert(_ other: Dictionary) {
         for (key, value) in other {
             self[key] = value
         }
     }
 
     /// Pretty formatted description string
-    public var prettyDescription: String {
-        do {
-            let data: Data = try JSONSerialization.data(withJSONObject: self, options: .prettyPrinted)
-            return String(data: data, encoding: .utf8).assertIfNil ?? ""
-        } catch {
-            assertionFailure("Failed to retrieve Dictionary pretty printed description. error - \(error.localizedDescription)")
-            return ""
-        }
+    var prettyDescription: String {
+        return Pretty.describing(self)        
     }
 
 }

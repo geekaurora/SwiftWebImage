@@ -271,7 +271,7 @@ private extension CZHTTPManager {
 
 // MARK: - CZDictionary
 
-public protocol CZDictionaryable: NSObjectProtocol {
+public protocol CZDictionaryable {
     init(dictionary: CZDictionary)
 }
 

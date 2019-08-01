@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A3EA2CE203BA72500A6D561 /* CZUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3EA2CD203BA72400A6D561 /* CZUtils.swift */; };
+		2A44FE3C22EF12DB003F52CA /* PrettyDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A44FE3B22EF12DB003F52CA /* PrettyDescription.swift */; };
 		2A901E3A1F7EC016004DAAC5 /* CZUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A901E381F7EC016004DAAC5 /* CZUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A901E441F7EC10B004DAAC5 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A901E3C1F7EC10B004DAAC5 /* Date+.swift */; };
 		2A901E451F7EC10B004DAAC5 /* Dictionary+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A901E3D1F7EC10B004DAAC5 /* Dictionary+.swift */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		2A3EA2CD203BA72400A6D561 /* CZUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZUtils.swift; sourceTree = "<group>"; };
+		2A44FE3B22EF12DB003F52CA /* PrettyDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PrettyDescription.swift; path = Utils/PrettyDescription.swift; sourceTree = "<group>"; };
 		2A901E381F7EC016004DAAC5 /* CZUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZUtils.h; path = "Supported Files/CZUtils.h"; sourceTree = "<group>"; };
 		2A901E391F7EC016004DAAC5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supported Files/Info.plist"; sourceTree = "<group>"; };
 		2A901E3C1F7EC10B004DAAC5 /* Date+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+.swift"; path = "Extensions/Date+.swift"; sourceTree = "<group>"; };
@@ -114,6 +116,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A44FE3A22EF12BA003F52CA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2A44FE3B22EF12DB003F52CA /* PrettyDescription.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		2AEC189C1F7C5CA5007A5DF1 /* Investigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +158,7 @@
 				C39983201F773E3000775B6C /* UI */,
 				C39983221F773E5500775B6C /* Error */,
 				C39983211F773E3400775B6C /* Extensions */,
+				2A44FE3A22EF12BA003F52CA /* Utils */,
 				2A901E381F7EC016004DAAC5 /* CZUtils.h */,
 				2A901E391F7EC016004DAAC5 /* Info.plist */,
 				2AB659E71FF02C95001A8835 /* CZUtils.podspec */,
@@ -354,6 +365,7 @@
 				2A901E471F7EC10B004DAAC5 /* UIButton+.swift in Sources */,
 				2A901E441F7EC10B004DAAC5 /* Date+.swift in Sources */,
 				2A901E611F7EC169004DAAC5 /* CZFileHelper.swift in Sources */,
+				2A44FE3C22EF12DB003F52CA /* PrettyDescription.swift in Sources */,
 				2A901E461F7EC10B004DAAC5 /* String+.swift in Sources */,
 				DF10CDE72157003900DAFDAB /* Optional+.swift in Sources */,
 				2A901E651F7EC169004DAAC5 /* NSNullGuard.swift in Sources */,

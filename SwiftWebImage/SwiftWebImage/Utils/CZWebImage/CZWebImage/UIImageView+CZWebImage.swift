@@ -28,10 +28,10 @@ extension UIImageView {
                             cropSize: CGSize? = nil,
                             options: [CZWebImageOption] = [.fadeInAnimation],
                             completion: CZWebImageCompletion? = nil) {
-        image = placeholderImage
         cz_cancelCurrentImageLoad()
+        
         czImageUrl = url
-
+        image = placeholderImage
         guard let url = url else {
             CZMainQueueScheduler.async {
                 completion?(nil, CZWebImageError("imageURL is nil"))

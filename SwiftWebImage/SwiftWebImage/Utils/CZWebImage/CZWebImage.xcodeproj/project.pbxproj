@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A02BFF11F7461EA00184823 /* CZWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A02BFE71F7461EA00184823 /* CZWebImage.framework */; };
+		2A02BFF61F7461EA00184823 /* CZWebImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A02BFF51F7461EA00184823 /* CZWebImageTests.swift */; };
 		2AC0F4011F8204C100B2A3B8 /* CZWebImageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC0F4001F8204C100B2A3B8 /* CZWebImageOption.swift */; };
 		2AD471EC1F7EC24400EEE87B /* CZWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD471EA1F7EC24400EEE87B /* CZWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2AD471F71F7EC2B200EEE87B /* CZImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD471EE1F7EC2B200EEE87B /* CZImageCache.swift */; };
@@ -29,23 +30,23 @@
 			remoteGlobalIDString = 2A02BFE61F7461EA00184823;
 			remoteInfo = CZWebImage;
 		};
-		C327819D22E9F5FD000FA22C /* PBXContainerItemProxy */ = {
+		2AA7B0F522F33634008B61A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C327818E22E9F5FA000FA22C /* CZNetworking.xcodeproj */;
+			containerPortal = 2AA7B0EF22F33634008B61A9 /* CZNetworking.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 044E02481F74349B00849AA2;
 			remoteInfo = CZNetworking;
 		};
-		C327819F22E9F5FD000FA22C /* PBXContainerItemProxy */ = {
+		2AA7B0F722F33634008B61A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C327818E22E9F5FA000FA22C /* CZNetworking.xcodeproj */;
+			containerPortal = 2AA7B0EF22F33634008B61A9 /* CZNetworking.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 044E02511F74349B00849AA2;
 			remoteInfo = CZNetworkingTests;
 		};
-		C32781A122E9F60B000FA22C /* PBXContainerItemProxy */ = {
+		2AA7B0F922F3363C008B61A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C327818E22E9F5FA000FA22C /* CZNetworking.xcodeproj */;
+			containerPortal = 2AA7B0EF22F33634008B61A9 /* CZNetworking.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 044E02471F74349B00849AA2;
 			remoteInfo = CZNetworking;
@@ -55,6 +56,9 @@
 /* Begin PBXFileReference section */
 		2A02BFE71F7461EA00184823 /* CZWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CZWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A02BFF01F7461EA00184823 /* CZWebImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZWebImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A02BFF51F7461EA00184823 /* CZWebImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZWebImageTests.swift; sourceTree = "<group>"; };
+		2A02BFF71F7461EA00184823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AA7B0EF22F33634008B61A9 /* CZNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CZNetworking.xcodeproj; path = "Supported Files/CZNetworking/CZNetworking.xcodeproj"; sourceTree = "<group>"; };
 		2AC0F4001F8204C100B2A3B8 /* CZWebImageOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CZWebImageOption.swift; path = CZWebImage/Utils/CZWebImageOption.swift; sourceTree = SOURCE_ROOT; };
 		2AD471EA1F7EC24400EEE87B /* CZWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZWebImage.h; path = "Supported Files/CZWebImage.h"; sourceTree = "<group>"; };
 		2AD471EB1F7EC24400EEE87B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supported Files/Info.plist"; sourceTree = "<group>"; };
@@ -68,7 +72,6 @@
 		2AD471F61F7EC2B200EEE87B /* UIImageView+CZWebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+CZWebImage.swift"; sourceTree = "<group>"; };
 		2AD472001F7EC2C400EEE87B /* CZWebImageError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CZWebImageError.swift; path = CZWebImage/Utils/CZWebImageError.swift; sourceTree = SOURCE_ROOT; };
 		2AD472021F7EC31900EEE87B /* CZCacheFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CZCacheFileManager.swift; path = CZWebImage/Utils/CZCacheFileManager.swift; sourceTree = SOURCE_ROOT; };
-		C327818E22E9F5FA000FA22C /* CZNetworking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CZNetworking.xcodeproj; path = "Supported Files/CZNetworking/CZNetworking.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				2A02BFE91F7461EA00184823 /* CZWebImage */,
+				2A02BFF41F7461EA00184823 /* CZWebImageTests */,
 				2A02BFE81F7461EA00184823 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,6 +128,15 @@
 			path = CZWebImage;
 			sourceTree = "<group>";
 		};
+		2A02BFF41F7461EA00184823 /* CZWebImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A02BFF51F7461EA00184823 /* CZWebImageTests.swift */,
+				2A02BFF71F7461EA00184823 /* Info.plist */,
+			);
+			path = CZWebImageTests;
+			sourceTree = "<group>";
+		};
 		2A02C0301F74628700184823 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,23 +148,23 @@
 			path = ../../CZGroupon/Common/CZWebImage/CZFlickr/FlickrDemo;
 			sourceTree = "<group>";
 		};
+		2AA7B0F022F33634008B61A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AA7B0F622F33634008B61A9 /* CZNetworking.framework */,
+				2AA7B0F822F33634008B61A9 /* CZNetworkingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2AB505E21F7E14AE0035B59B /* Supported Files */ = {
 			isa = PBXGroup;
 			children = (
-				C327818E22E9F5FA000FA22C /* CZNetworking.xcodeproj */,
+				2AA7B0EF22F33634008B61A9 /* CZNetworking.xcodeproj */,
 				2AD471EA1F7EC24400EEE87B /* CZWebImage.h */,
 				2AD471EB1F7EC24400EEE87B /* Info.plist */,
 			);
 			name = "Supported Files";
-			sourceTree = "<group>";
-		};
-		C327819922E9F5FD000FA22C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C327819E22E9F5FD000FA22C /* CZNetworking.framework */,
-				C32781A022E9F5FD000FA22C /* CZNetworkingTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +194,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C32781A222E9F60B000FA22C /* PBXTargetDependency */,
+				2AA7B0FA22F3363C008B61A9 /* PBXTargetDependency */,
 			);
 			name = CZWebImage;
 			productName = CZWebImage;
@@ -243,8 +256,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C327819922E9F5FD000FA22C /* Products */;
-					ProjectRef = C327818E22E9F5FA000FA22C /* CZNetworking.xcodeproj */;
+					ProductGroup = 2AA7B0F022F33634008B61A9 /* Products */;
+					ProjectRef = 2AA7B0EF22F33634008B61A9 /* CZNetworking.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -256,18 +269,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C327819E22E9F5FD000FA22C /* CZNetworking.framework */ = {
+		2AA7B0F622F33634008B61A9 /* CZNetworking.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CZNetworking.framework;
-			remoteRef = C327819D22E9F5FD000FA22C /* PBXContainerItemProxy */;
+			remoteRef = 2AA7B0F522F33634008B61A9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C32781A022E9F5FD000FA22C /* CZNetworkingTests.xctest */ = {
+		2AA7B0F822F33634008B61A9 /* CZNetworkingTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CZNetworkingTests.xctest;
-			remoteRef = C327819F22E9F5FD000FA22C /* PBXContainerItemProxy */;
+			remoteRef = 2AA7B0F722F33634008B61A9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -310,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A02BFF61F7461EA00184823 /* CZWebImageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,10 +335,10 @@
 			target = 2A02BFE61F7461EA00184823 /* CZWebImage */;
 			targetProxy = 2A02BFF21F7461EA00184823 /* PBXContainerItemProxy */;
 		};
-		C32781A222E9F60B000FA22C /* PBXTargetDependency */ = {
+		2AA7B0FA22F3363C008B61A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CZNetworking;
-			targetProxy = C32781A122E9F60B000FA22C /* PBXContainerItemProxy */;
+			targetProxy = 2AA7B0F922F3363C008B61A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

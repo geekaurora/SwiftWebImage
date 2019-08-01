@@ -27,23 +27,23 @@
 			remoteGlobalIDString = 044E02471F74349B00849AA2;
 			remoteInfo = CZNetworking;
 		};
-		C327818822E9F5AA000FA22C /* PBXContainerItemProxy */ = {
+		2A69A1A722F3317900B5DB66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C327818322E9F5AA000FA22C /* CZUtils.xcodeproj */;
+			containerPortal = 2A69A1A222F3317900B5DB66 /* CZUtils.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C39982CA1F7739EA00775B6C;
 			remoteInfo = CZUtils;
 		};
-		C327818A22E9F5AA000FA22C /* PBXContainerItemProxy */ = {
+		2A69A1A922F3317900B5DB66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C327818322E9F5AA000FA22C /* CZUtils.xcodeproj */;
+			containerPortal = 2A69A1A222F3317900B5DB66 /* CZUtils.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C39982D31F7739EA00775B6C;
 			remoteInfo = CZUtilsTests;
 		};
-		C327818C22E9F5B2000FA22C /* PBXContainerItemProxy */ = {
+		2A69A1AB22F3317E00B5DB66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C327818322E9F5AA000FA22C /* CZUtils.xcodeproj */;
+			containerPortal = 2A69A1A222F3317900B5DB66 /* CZUtils.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = C39982C91F7739EA00775B6C;
 			remoteInfo = CZUtils;
@@ -60,10 +60,10 @@
 		044E02711F74358600849AA2 /* CZHTTPCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZHTTPCache.swift; sourceTree = "<group>"; };
 		044E02731F74358600849AA2 /* CZHTTPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CZHTTPManager.swift; sourceTree = "<group>"; };
 		044E02741F74358600849AA2 /* HTTPRequestWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestWorker.swift; sourceTree = "<group>"; };
+		2A69A1A222F3317900B5DB66 /* CZUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CZUtils.xcodeproj; path = "Supported Files/CZUtils/CZUtils.xcodeproj"; sourceTree = "<group>"; };
 		2AE2966E21FAE2A400C3FD51 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Utils/Extensions.swift; sourceTree = "<group>"; };
 		2AE2966F21FAE2A400C3FD51 /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Utils/Upload.swift; sourceTree = "<group>"; };
 		2AE2967021FAE2A400C3FD51 /* CZNetError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CZNetError.swift; path = Utils/CZNetError.swift; sourceTree = "<group>"; };
-		C327818322E9F5AA000FA22C /* CZUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CZUtils.xcodeproj; path = "Supported Files/CZUtils/CZUtils.xcodeproj"; sourceTree = "<group>"; };
 		DF2A861020E0267C00BED02D /* CZUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CZUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -130,11 +130,20 @@
 		044E02DB1F7440FD00849AA2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C327818322E9F5AA000FA22C /* CZUtils.xcodeproj */,
+				2A69A1A222F3317900B5DB66 /* CZUtils.xcodeproj */,
 				044E024B1F74349B00849AA2 /* CZNetworking.h */,
 				044E024C1F74349B00849AA2 /* Info.plist */,
 			);
 			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		2A69A1A322F3317900B5DB66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A69A1A822F3317900B5DB66 /* CZUtils.framework */,
+				2A69A1AA22F3317900B5DB66 /* CZUtilsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		2A9200881F75E9BA00A21F01 /* Utils */ = {
@@ -145,15 +154,6 @@
 				2AE2966F21FAE2A400C3FD51 /* Upload.swift */,
 			);
 			name = Utils;
-			sourceTree = "<group>";
-		};
-		C327818422E9F5AA000FA22C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C327818922E9F5AA000FA22C /* CZUtils.framework */,
-				C327818B22E9F5AA000FA22C /* CZUtilsTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		DF2A860F20E0267C00BED02D /* Frameworks */ = {
@@ -190,7 +190,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C327818D22E9F5B2000FA22C /* PBXTargetDependency */,
+				2A69A1AC22F3317E00B5DB66 /* PBXTargetDependency */,
 			);
 			name = CZNetworking;
 			productName = CZNetworking;
@@ -253,8 +253,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C327818422E9F5AA000FA22C /* Products */;
-					ProjectRef = C327818322E9F5AA000FA22C /* CZUtils.xcodeproj */;
+					ProductGroup = 2A69A1A322F3317900B5DB66 /* Products */;
+					ProjectRef = 2A69A1A222F3317900B5DB66 /* CZUtils.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -266,18 +266,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C327818922E9F5AA000FA22C /* CZUtils.framework */ = {
+		2A69A1A822F3317900B5DB66 /* CZUtils.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CZUtils.framework;
-			remoteRef = C327818822E9F5AA000FA22C /* PBXContainerItemProxy */;
+			remoteRef = 2A69A1A722F3317900B5DB66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C327818B22E9F5AA000FA22C /* CZUtilsTests.xctest */ = {
+		2A69A1AA22F3317900B5DB66 /* CZUtilsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = CZUtilsTests.xctest;
-			remoteRef = C327818A22E9F5AA000FA22C /* PBXContainerItemProxy */;
+			remoteRef = 2A69A1A922F3317900B5DB66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -329,10 +329,10 @@
 			target = 044E02471F74349B00849AA2 /* CZNetworking */;
 			targetProxy = 044E02531F74349B00849AA2 /* PBXContainerItemProxy */;
 		};
-		C327818D22E9F5B2000FA22C /* PBXTargetDependency */ = {
+		2A69A1AC22F3317E00B5DB66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CZUtils;
-			targetProxy = C327818C22E9F5B2000FA22C /* PBXContainerItemProxy */;
+			targetProxy = 2A69A1AB22F3317E00B5DB66 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

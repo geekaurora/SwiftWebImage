@@ -5,9 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/CZUtils.svg?style=flat)](http://cocoapods.org/pods/CZUtils)
 [![Platform](https://img.shields.io/cocoapods/p/CZUtils.svg?style=flat)](http://cocoapods.org/pods/CZUtils)
 
-Progressive concurrent image downloader for SwiftUI BindingObject.
-
-With neat APIs, performant LRU mem/disk cache. Supports cropping image in background thread.
+Progressive concurrent image downloader for SwiftUI BindingObject, with neat API and performant LRU mem/disk cache.
  
 ### Simple Usage
 

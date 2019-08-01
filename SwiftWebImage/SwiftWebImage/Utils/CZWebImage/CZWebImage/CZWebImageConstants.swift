@@ -13,7 +13,7 @@ import UIKit
  */
 enum CZWebImageConstants {
     static let shouldObserveOperations: Bool = false
-    static let downloadQueueMaxConcurrent: Int = 50
+    static let downloadQueueMaxConcurrent: Int = 5
     static let decodeQueueMaxConcurrent: Int = downloadQueueMaxConcurrent
     static let kOperations = "operations"
     static let errorDomain = "CZWebImage"

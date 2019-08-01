@@ -91,32 +91,28 @@ class CZImageCache: NSObject {
         }
     }    
     
-    public func getCachedFile(with url: URL, completion: @escaping (UIImage?) -> Void)  {
-        let getCacheClosure = {
-            let (fileURL, cacheKey) = self.getCacheFileInfo(forURL: url)
-            // Read data from mem cache
-            var image: UIImage? = self.getMemCache(forKey: cacheKey)
-            // Read data from disk cache
-            if image == nil {
-                image = self.ioQueue.sync {
-                    if let data = try? Data(contentsOf: fileURL),
-                        let image = UIImage(data: data) {
-                        // update lastVisited date
-                        self.setCachedItemsInfo(key: cacheKey, subkey: Constant.kFileVisitedDate, value: NSDate())
-                        // Set mem cache after loading data from local drive
-                        self.setMemCache(image: image, forKey: cacheKey)
-                        return image
-                    }
-                    return nil
+    public func getCachedFile(with url: URL, completion: @escaping (UIImage?) -> Void)  {        
+        let (fileURL, cacheKey) = self.getCacheFileInfo(forURL: url)
+        // Read data from mem cache
+        var image: UIImage? = self.getMemCache(forKey: cacheKey)
+        // Read data from disk cache
+        if image == nil {
+            image = self.ioQueue.sync {
+                if let data = try? Data(contentsOf: fileURL),
+                    let image = UIImage(data: data) {
+                    // Update last visited date
+                    self.setCachedItemsInfo(key: cacheKey, subkey: Constant.kFileVisitedDate, value: NSDate())
+                    // Set mem cache after loading data from local drive
+                    self.setMemCache(image: image, forKey: cacheKey)
+                    return image
                 }
-            }
-            // Completion callback
-            CZMainQueueScheduler.sync {
-                completion(image)
+                return nil
             }
         }
-        getCacheClosure()
-        //operationQueue.addOperation(getCacheClosure)
+        // Completion callback
+        CZMainQueueScheduler.sync {
+            completion(image)
+        }
     }
     
     func cleanDiskCacheIfNeeded(completion: CleanDiskCacheCompletion? = nil){

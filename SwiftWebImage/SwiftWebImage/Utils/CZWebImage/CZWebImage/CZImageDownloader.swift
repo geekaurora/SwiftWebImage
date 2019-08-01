@@ -18,15 +18,22 @@ public typealias CZImageDownloderCompletion = (_ image: UIImage?, _ error: Error
  Asynchronous image downloading class on top of OperationQueue
  */
 public class CZImageDownloader: NSObject {
-    private var imageDownloadQueue: OperationQueue
-    private var imageDecodeQueue: OperationQueue
     public static let shared = CZImageDownloader()
+    private let imageDownloadQueue: OperationQueue
+    private let imageDecodeQueue: OperationQueue
+    private enum Constant {
+        static let imageDownloadQueueName = "com.tony.image.download"
+        static let imageDecodeQueueName = "com.tony.image.decode"
+    }
     
     public override init() {
         imageDownloadQueue = OperationQueue()
+        imageDownloadQueue.name = Constant.imageDownloadQueueName
         imageDownloadQueue.qualityOfService = .userInteractive
         imageDownloadQueue.maxConcurrentOperationCount = CZWebImageConstants.downloadQueueMaxConcurrent
+        
         imageDecodeQueue = OperationQueue()
+        imageDownloadQueue.name = Constant.imageDecodeQueueName
         imageDecodeQueue.maxConcurrentOperationCount = CZWebImageConstants.decodeQueueMaxConcurrent
         super.init()
         
@@ -102,7 +109,7 @@ extension CZImageDownloader {
                 return
         }
         if object === imageDownloadQueue {
-            CZUtils.dbgPrint("Default image queue size: \(object.operationCount)")
+            CZUtils.dbgPrint("Queued tasks: \(object.operationCount)")
         }
     }
 }

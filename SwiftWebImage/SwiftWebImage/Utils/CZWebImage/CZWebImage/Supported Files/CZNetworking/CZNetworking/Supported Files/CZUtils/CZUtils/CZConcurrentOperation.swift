@@ -54,6 +54,10 @@ import Foundation
     /// Call this function after any work is done or after a call to `cancel()`
     /// to move the operation into a completed state.
     public final func finish() {
+        if !isExecuting  {
+             // Set state to `.executing` if not before finish to avoid crash
+            state = .executing
+        }
         state = .finished
     }
 
