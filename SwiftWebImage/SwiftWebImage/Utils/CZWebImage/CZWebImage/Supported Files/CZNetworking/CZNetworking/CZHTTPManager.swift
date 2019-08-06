@@ -268,12 +268,3 @@ private extension CZHTTPManager {
     }
 
 }
-
-// MARK: - CZDictionary
-
-public protocol CZDictionaryable {
-    init(dictionary: CZDictionary)
-}
-
-public typealias CZDictionary = [AnyHashable : Any]
-

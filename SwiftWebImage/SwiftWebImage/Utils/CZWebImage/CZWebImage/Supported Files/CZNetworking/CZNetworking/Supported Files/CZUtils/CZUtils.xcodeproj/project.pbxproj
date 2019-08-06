@@ -38,6 +38,7 @@
 		2AEC18991F7C2791007A5DF1 /* TestThreadSafeDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC18981F7C2791007A5DF1 /* TestThreadSafeDictionary.swift */; };
 		2AFC641721C198B9000F36EF /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC641621C198B9000F36EF /* NSObject+.swift */; };
 		C39982D41F7739EA00775B6C /* CZUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39982CA1F7739EA00775B6C /* CZUtils.framework */; };
+		C3B1F4B022F98DDE00A5237F /* CZDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B1F4AF22F98DDE00A5237F /* CZDictionary.swift */; };
 		C3FCE84322E8541E00506EB1 /* Character+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FCE84222E8541E00506EB1 /* Character+.swift */; };
 		DF10CDE72157003900DAFDAB /* Optional+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF10CDE62157003900DAFDAB /* Optional+.swift */; };
 		DF722E0822B4F10E003477FD /* Set+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF722E0722B4F10D003477FD /* Set+.swift */; };
@@ -90,6 +91,7 @@
 		C39982CA1F7739EA00775B6C /* CZUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CZUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39982D31F7739EA00775B6C /* CZUtilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CZUtilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39982DA1F7739EA00775B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B1F4AF22F98DDE00A5237F /* CZDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CZDictionary.swift; sourceTree = "<group>"; };
 		C3FCE84222E8541E00506EB1 /* Character+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Character+.swift"; path = "Extensions/Character+.swift"; sourceTree = "<group>"; };
 		DF10CDE62157003900DAFDAB /* Optional+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Optional+.swift"; path = "Extensions/Optional+.swift"; sourceTree = "<group>"; };
 		DF722E0722B4F10D003477FD /* Set+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Set+.swift"; path = "Extensions/Set+.swift"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				2A44FE3B22EF12DB003F52CA /* PrettyDescription.swift */,
+				C3B1F4AF22F98DDE00A5237F /* CZDictionary.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B1F4B022F98DDE00A5237F /* CZDictionary.swift in Sources */,
 				2A901E641F7EC169004DAAC5 /* CZProMutexLock.swift in Sources */,
 				2A901E661F7EC169004DAAC5 /* Swizzling.swift in Sources */,
 				2A901E4D1F7EC113004DAAC5 /* CZError.swift in Sources */,
