@@ -9,11 +9,11 @@ import SwiftUI
 import CZWebImage
 
 public struct SwiftImage: View {
-    
-    @ObjectBinding private var imageDownloader = SwiftImageDownloader()
-    
+
+    @ObservedObject private var imageDownloader = SwiftImageDownloader()
+
     public typealias Config = (Image) -> AnyView
-    
+
     private let placeholder: UIImage
     private let config: Config?
 
@@ -33,5 +33,5 @@ public struct SwiftImage: View {
         }
         return AnyView(imageView)
     }
-    
+
 }

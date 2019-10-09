@@ -9,18 +9,12 @@ import SwiftUI
 import Combine
 import CZWebImage
 
-class SwiftImageDownloader: BindableObject {
-    
-    var didChange = PassthroughSubject<UIImage?, Never>()
-    
+class SwiftImageDownloader: ObservableObject {
+
+    @Published var image: UIImage?
+
     private var url: String?
-    
-    var image: UIImage? {
-        didSet {
-            didChange.send(image)
-        }
-    }
-    
+
     func download(url: String?) {
         // Fetch image data and then call didChange
         self.url = url
