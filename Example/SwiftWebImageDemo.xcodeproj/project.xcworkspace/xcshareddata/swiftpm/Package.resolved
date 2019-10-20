@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CZNetworking",
+        "repositoryURL": "https://github.com/geekaurora/CZNetworking.git",
+        "state": {
+          "branch": null,
+          "revision": "0448b6e27a0a79350cc8440f7d0a80c2829a2b30",
+          "version": "3.0.0"
+        }
+      },
+      {
+        "package": "CZUtils",
+        "repositoryURL": "https://github.com/geekaurora/CZUtils.git",
+        "state": {
+          "branch": null,
+          "revision": "007ab788b085f6c82b1efa6e99312be6f3a55db6",
+          "version": "3.0.0"
+        }
+      },
+      {
+        "package": "CZWebImage",
+        "repositoryURL": "https://github.com/geekaurora/CZWebImage.git",
+        "state": {
+          "branch": null,
+          "revision": "25da23398f561f8986ccf913747238dea2c877b0",
+          "version": "3.0.0"
+        }
+      },
+      {
+        "package": "SwiftWebImage",
+        "repositoryURL": "https://github.com/geekaurora/SwiftWebImage.git",
+        "state": {
+          "branch": null,
+          "revision": "1b2d34c27fffb4450db78bba429b6663c57f0aef",
+          "version": "3.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

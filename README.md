@@ -47,4 +47,4 @@ var body: some View {
 
 ### Demo
 
-<img src="./Docs/CZInstagram.gif">
+<img src="https://media.giphy.com/media/jSWYS99p1rXe9nSCtp/giphy.gif">

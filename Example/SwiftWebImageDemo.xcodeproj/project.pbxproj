@@ -3,18 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C36AD071234D8A04006D39DD /* CZNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36AD070234D8A04006D39DD /* CZNetworking.framework */; };
-		C36AD072234D8A04006D39DD /* CZNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C36AD070234D8A04006D39DD /* CZNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C36AD076234D8A08006D39DD /* CZUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36AD075234D8A08006D39DD /* CZUtils.framework */; };
-		C36AD077234D8A08006D39DD /* CZUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C36AD075234D8A08006D39DD /* CZUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C36AD079234D8A0C006D39DD /* CZWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36AD078234D8A0C006D39DD /* CZWebImage.framework */; };
-		C36AD07A234D8A0C006D39DD /* CZWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C36AD078234D8A0C006D39DD /* CZWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C36AD07B234D8A0F006D39DD /* SwiftWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3090FD522F3389C004D413D /* SwiftWebImage.framework */; };
-		C36AD07C234D8A0F006D39DD /* SwiftWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3090FD522F3389C004D413D /* SwiftWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C3A5349B22E9F95F0099CE0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A5349A22E9F95F0099CE0C /* AppDelegate.swift */; };
 		C3A5349D22E9F95F0099CE0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A5349C22E9F95F0099CE0C /* SceneDelegate.swift */; };
 		C3A5349F22E9F95F0099CE0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A5349E22E9F95F0099CE0C /* ContentView.swift */; };
@@ -23,30 +15,10 @@
 		C3A534A722E9F9610099CE0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A534A522E9F9610099CE0C /* LaunchScreen.storyboard */; };
 		C3A534B222E9F9610099CE0C /* SwiftWebImageDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A534B122E9F9610099CE0C /* SwiftWebImageDemoTests.swift */; };
 		C3A534BD22E9F9610099CE0C /* SwiftWebImageDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A534BC22E9F9610099CE0C /* SwiftWebImageDemoUITests.swift */; };
+		C3A95453235C3E21003A7138 /* SwiftWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C3A95452235C3E21003A7138 /* SwiftWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C3090FD422F3389C004D413D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3090FCC22F3389C004D413D /* SwiftWebImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C35BD2A822E9F38D003AF271;
-			remoteInfo = SwiftWebImage;
-		};
-		C3090FD622F3389C004D413D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3090FCC22F3389C004D413D /* SwiftWebImage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C35BD2B122E9F38D003AF271;
-			remoteInfo = SwiftWebImageTests;
-		};
-		C3090FD822F338A4004D413D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3090FCC22F3389C004D413D /* SwiftWebImage.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C35BD2A722E9F38D003AF271;
-			remoteInfo = SwiftWebImage;
-		};
 		C3A534AE22E9F9610099CE0C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C3A5348F22E9F95F0099CE0C /* Project object */;
@@ -63,25 +35,7 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		C36AD073234D8A05006D39DD /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C36AD072234D8A04006D39DD /* CZNetworking.framework in Embed Frameworks */,
-				C36AD07C234D8A0F006D39DD /* SwiftWebImage.framework in Embed Frameworks */,
-				C36AD077234D8A08006D39DD /* CZUtils.framework in Embed Frameworks */,
-				C36AD07A234D8A0C006D39DD /* CZWebImage.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		C3090FCC22F3389C004D413D /* SwiftWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftWebImage.xcodeproj; path = ../SwiftWebImage/SwiftWebImage.xcodeproj; sourceTree = "<group>"; };
 		C36AD070234D8A04006D39DD /* CZNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CZNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36AD075234D8A08006D39DD /* CZUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CZUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36AD078234D8A0C006D39DD /* CZWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CZWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,10 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C36AD071234D8A04006D39DD /* CZNetworking.framework in Frameworks */,
-				C36AD07B234D8A0F006D39DD /* SwiftWebImage.framework in Frameworks */,
-				C36AD076234D8A08006D39DD /* CZUtils.framework in Frameworks */,
-				C36AD079234D8A0C006D39DD /* CZWebImage.framework in Frameworks */,
+				C3A95453235C3E21003A7138 /* SwiftWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,15 +81,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C3090FCD22F3389C004D413D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C3090FD522F3389C004D413D /* SwiftWebImage.framework */,
-				C3090FD722F3389C004D413D /* SwiftWebImageTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		C36AD06F234D8A04006D39DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +94,6 @@
 		C3A5348E22E9F95F0099CE0C = {
 			isa = PBXGroup;
 			children = (
-				C3090FCC22F3389C004D413D /* SwiftWebImage.xcodeproj */,
 				C3A5349922E9F95F0099CE0C /* SwiftWebImageDemo */,
 				C3A534B022E9F9610099CE0C /* SwiftWebImageDemoTests */,
 				C3A534BB22E9F9610099CE0C /* SwiftWebImageDemoUITests */,
@@ -229,14 +170,15 @@
 				C3A5349322E9F95F0099CE0C /* Sources */,
 				C3A5349422E9F95F0099CE0C /* Frameworks */,
 				C3A5349522E9F95F0099CE0C /* Resources */,
-				C36AD073234D8A05006D39DD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C3090FD922F338A4004D413D /* PBXTargetDependency */,
 			);
 			name = SwiftWebImageDemo;
+			packageProductDependencies = (
+				C3A95452235C3E21003A7138 /* SwiftWebImage */,
+			);
 			productName = SwiftWebImageDemo;
 			productReference = C3A5349722E9F95F0099CE0C /* SwiftWebImageDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -309,14 +251,11 @@
 				Base,
 			);
 			mainGroup = C3A5348E22E9F95F0099CE0C;
+			packageReferences = (
+				C3A95451235C3E21003A7138 /* XCRemoteSwiftPackageReference "SwiftWebImage" */,
+			);
 			productRefGroup = C3A5349822E9F95F0099CE0C /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C3090FCD22F3389C004D413D /* Products */;
-					ProjectRef = C3090FCC22F3389C004D413D /* SwiftWebImage.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				C3A5349622E9F95F0099CE0C /* SwiftWebImageDemo */,
@@ -325,23 +264,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		C3090FD522F3389C004D413D /* SwiftWebImage.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftWebImage.framework;
-			remoteRef = C3090FD422F3389C004D413D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C3090FD722F3389C004D413D /* SwiftWebImageTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SwiftWebImageTests.xctest;
-			remoteRef = C3090FD622F3389C004D413D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C3A5349522E9F95F0099CE0C /* Resources */ = {
@@ -400,11 +322,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C3090FD922F338A4004D413D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftWebImage;
-			targetProxy = C3090FD822F338A4004D413D /* PBXContainerItemProxy */;
-		};
 		C3A534AF22E9F9610099CE0C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C3A5349622E9F95F0099CE0C /* SwiftWebImageDemo */;
@@ -705,6 +622,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3A95451235C3E21003A7138 /* XCRemoteSwiftPackageReference "SwiftWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/geekaurora/SwiftWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3A95452235C3E21003A7138 /* SwiftWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3A95451235C3E21003A7138 /* XCRemoteSwiftPackageReference "SwiftWebImage" */;
+			productName = SwiftWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3A5348F22E9F95F0099CE0C /* Project object */;
 }
