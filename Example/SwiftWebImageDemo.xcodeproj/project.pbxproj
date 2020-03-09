@@ -629,7 +629,7 @@
 			repositoryURL = "https://github.com/geekaurora/SwiftWebImage.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.3;
+				minimumVersion = 3.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
