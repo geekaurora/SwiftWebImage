@@ -1,11 +1,3 @@
-//
-//  ContentView.swift
-//  SwiftWebImageDemo
-//
-//  Created by Cheng Zhang on 2019/7/25.
-//  Copyright © 2019 Cheng Zhang. All rights reserved.
-//
-
 import SwiftUI
 import SwiftWebImage
 

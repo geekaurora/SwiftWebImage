@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,7 @@
 		C3A534A722E9F9610099CE0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A534A522E9F9610099CE0C /* LaunchScreen.storyboard */; };
 		C3A534B222E9F9610099CE0C /* SwiftWebImageDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A534B122E9F9610099CE0C /* SwiftWebImageDemoTests.swift */; };
 		C3A534BD22E9F9610099CE0C /* SwiftWebImageDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A534BC22E9F9610099CE0C /* SwiftWebImageDemoUITests.swift */; };
-		C3A95453235C3E21003A7138 /* SwiftWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C3A95452235C3E21003A7138 /* SwiftWebImage */; };
+		DF2C24B324321B64006B8912 /* CZWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2C24A724321B4B006B8912 /* CZWebImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +32,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = C3A5349622E9F95F0099CE0C;
 			remoteInfo = SwiftWebImageDemo;
+		};
+		DF2C24A224321B4B006B8912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF2C248F24321B4B006B8912 /* SwiftWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "CZNetworking::CZNetworking::Product";
+			remoteInfo = CZNetworking;
+		};
+		DF2C24A424321B4B006B8912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF2C248F24321B4B006B8912 /* SwiftWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "CZUtils::CZUtils::Product";
+			remoteInfo = CZUtils;
+		};
+		DF2C24A624321B4B006B8912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF2C248F24321B4B006B8912 /* SwiftWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "CZWebImage::CZWebImage::Product";
+			remoteInfo = CZWebImage;
+		};
+		DF2C24A824321B4B006B8912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF2C248F24321B4B006B8912 /* SwiftWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SwiftWebImage::SwiftWebImage::Product";
+			remoteInfo = SwiftWebImage;
+		};
+		DF2C24AA24321B4B006B8912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF2C248F24321B4B006B8912 /* SwiftWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SwiftWebImage::SwiftWebImageTests::Product";
+			remoteInfo = SwiftWebImageTests;
+		};
+		DF2C24B124321B5F006B8912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF2C248F24321B4B006B8912 /* SwiftWebImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "CZWebImage::CZWebImage";
+			remoteInfo = CZWebImage;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +95,7 @@
 		C3A534B822E9F9610099CE0C /* SwiftWebImageDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftWebImageDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A534BC22E9F9610099CE0C /* SwiftWebImageDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWebImageDemoUITests.swift; sourceTree = "<group>"; };
 		C3A534BE22E9F9610099CE0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2C248F24321B4B006B8912 /* SwiftWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftWebImage.xcodeproj; path = ../SwiftWebImage.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3A95453235C3E21003A7138 /* SwiftWebImage in Frameworks */,
+				DF2C24B324321B64006B8912 /* CZWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +137,7 @@
 		C3A5348E22E9F95F0099CE0C = {
 			isa = PBXGroup;
 			children = (
+				DF2C248F24321B4B006B8912 /* SwiftWebImage.xcodeproj */,
 				C3A5349922E9F95F0099CE0C /* SwiftWebImageDemo */,
 				C3A534B022E9F9610099CE0C /* SwiftWebImageDemoTests */,
 				C3A534BB22E9F9610099CE0C /* SwiftWebImageDemoUITests */,
@@ -160,6 +204,18 @@
 			path = "Supported Files";
 			sourceTree = "<group>";
 		};
+		DF2C249024321B4B006B8912 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF2C24A324321B4B006B8912 /* CZNetworking.framework */,
+				DF2C24A524321B4B006B8912 /* CZUtils.framework */,
+				DF2C24A724321B4B006B8912 /* CZWebImage.framework */,
+				DF2C24A924321B4B006B8912 /* SwiftWebImage.framework */,
+				DF2C24AB24321B4B006B8912 /* SwiftWebImageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -174,10 +230,10 @@
 			buildRules = (
 			);
 			dependencies = (
+				DF2C24B224321B5F006B8912 /* PBXTargetDependency */,
 			);
 			name = SwiftWebImageDemo;
 			packageProductDependencies = (
-				C3A95452235C3E21003A7138 /* SwiftWebImage */,
 			);
 			productName = SwiftWebImageDemo;
 			productReference = C3A5349722E9F95F0099CE0C /* SwiftWebImageDemo.app */;
@@ -252,10 +308,15 @@
 			);
 			mainGroup = C3A5348E22E9F95F0099CE0C;
 			packageReferences = (
-				C3A95451235C3E21003A7138 /* XCRemoteSwiftPackageReference "SwiftWebImage" */,
 			);
 			productRefGroup = C3A5349822E9F95F0099CE0C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DF2C249024321B4B006B8912 /* Products */;
+					ProjectRef = DF2C248F24321B4B006B8912 /* SwiftWebImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C3A5349622E9F95F0099CE0C /* SwiftWebImageDemo */,
@@ -264,6 +325,44 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DF2C24A324321B4B006B8912 /* CZNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CZNetworking.framework;
+			remoteRef = DF2C24A224321B4B006B8912 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DF2C24A524321B4B006B8912 /* CZUtils.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CZUtils.framework;
+			remoteRef = DF2C24A424321B4B006B8912 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DF2C24A724321B4B006B8912 /* CZWebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CZWebImage.framework;
+			remoteRef = DF2C24A624321B4B006B8912 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DF2C24A924321B4B006B8912 /* SwiftWebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftWebImage.framework;
+			remoteRef = DF2C24A824321B4B006B8912 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DF2C24AB24321B4B006B8912 /* SwiftWebImageTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = file;
+			path = SwiftWebImageTests.xctest;
+			remoteRef = DF2C24AA24321B4B006B8912 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C3A5349522E9F95F0099CE0C /* Resources */ = {
@@ -331,6 +430,11 @@
 			isa = PBXTargetDependency;
 			target = C3A5349622E9F95F0099CE0C /* SwiftWebImageDemo */;
 			targetProxy = C3A534B922E9F9610099CE0C /* PBXContainerItemProxy */;
+		};
+		DF2C24B224321B5F006B8912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CZWebImage;
+			targetProxy = DF2C24B124321B5F006B8912 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -622,25 +726,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C3A95451235C3E21003A7138 /* XCRemoteSwiftPackageReference "SwiftWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/geekaurora/SwiftWebImage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.4;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C3A95452235C3E21003A7138 /* SwiftWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C3A95451235C3E21003A7138 /* XCRemoteSwiftPackageReference "SwiftWebImage" */;
-			productName = SwiftWebImage;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3A5348F22E9F95F0099CE0C /* Project object */;
 }
