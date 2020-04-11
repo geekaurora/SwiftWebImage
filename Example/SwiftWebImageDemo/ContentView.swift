@@ -26,11 +26,11 @@ struct ContentView : View {
                      
                      - warning: Should set correct sizing constraint to ensure layout consistency before/after image data loading in List
                      */
-                    return AnyView(
+                    return
                         imageView
                             .resizable()
-                            .aspectRatio(1, contentMode: .fit)
-                    )
+                            .aspectRatio(1, contentMode: .fit) as! Image
+
                 }
             }
         }

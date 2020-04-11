@@ -75,6 +75,13 @@
 			remoteGlobalIDString = "CZWebImage::CZWebImage";
 			remoteInfo = CZWebImage;
 		};
+		DF2C2533243317CD006B8912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF2C248F24321B4B006B8912 /* SwiftWebImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftWebImage::SwiftWebImage";
+			remoteInfo = SwiftWebImage;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -230,6 +237,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DF2C2534243317CD006B8912 /* PBXTargetDependency */,
 				DF2C24B224321B5F006B8912 /* PBXTargetDependency */,
 			);
 			name = SwiftWebImageDemo;
@@ -435,6 +443,11 @@
 			isa = PBXTargetDependency;
 			name = CZWebImage;
 			targetProxy = DF2C24B124321B5F006B8912 /* PBXContainerItemProxy */;
+		};
+		DF2C2534243317CD006B8912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftWebImage;
+			targetProxy = DF2C2533243317CD006B8912 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

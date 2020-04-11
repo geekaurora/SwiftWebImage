@@ -10,28 +10,32 @@ import CZWebImage
 
 public struct SwiftImage: View {
 
-    @ObservedObject private var imageDownloader = SwiftImageDownloader()
+  @ObservedObject private var imageDownloader = SwiftImageDownloader()
 
-    public typealias Config = (Image) -> AnyView
+  public typealias Config = (Image) -> AnyView
 
-    private let placeholder: UIImage
-    private let config: Config?
+  private let placeholder: UIImage
+  private let config: Config?
 
-    public init(url: String?,
-                placeholder: UIImage = UIImage(),
-                config: Config? = nil) {
-        self.placeholder = placeholder
-        self.config = config
-        imageDownloader.download(url: url)
+  public init(url: String?,
+              placeholder: UIImage = UIImage(),
+              config: Config? = nil) {
+    self.placeholder = placeholder
+    self.config = config
+    imageDownloader.download(url: url)
+  }
+
+  public func myConfig(_ image: Image) -> some View {
+    return image
+  }
+
+  public var body: some View {
+    let image: UIImage = imageDownloader.image ?? placeholder
+    let imageView = Image(uiImage: image)
+    if let config = config {
+      return config(imageView)
     }
-    
-    public var body: some View {
-        let image: UIImage = imageDownloader.image ?? placeholder
-        let imageView = Image(uiImage: image)
-        if let config = config {
-            return config(imageView)
-        }
-        return AnyView(imageView)
-    }
+    return AnyView(imageView)
+  }
 
 }
