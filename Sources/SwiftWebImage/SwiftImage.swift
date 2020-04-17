@@ -10,8 +10,22 @@ import CZWebImage
 
 /// SwiftUI image downloader with performant LRU mem/disk cache.
 ///
-/// ### Usage
-
+/// ### Usage Samples
+///
+///  - `import SwiftWebImage` and set `url` for `SwiftImage`:
+///  ```
+///  SwiftImage<Image>(url: imageUrl)
+///  ```
+///  Framework will automatically load Image with `@ObservedObject` data once download completes.
+///
+///  - To config Image, trailing `config` block of `SwiftImage` is used for underlying ImageView configuration:
+///  ```
+///  SwiftImage(url: imageUrl) { imageView in
+///    imageView
+///      .resizable()
+///      .aspectRatio(1, contentMode: .fit)
+///  }
+///  ```
 public struct SwiftImage<V: View>: View {
   
   @ObservedObject private var imageDownloader = SwiftImageDownloader()

@@ -12,16 +12,7 @@ Progressive concurrent image downloader for SwiftUI, with neat API and performan
 Just `import SwiftWebImage` and set `url` for `SwiftImage`:
 
 ```swift
-import SwiftWebImage
-
-var body: some View {
-  List {
-    ForEach(Feed.list) { feed in
-      // Set `url` for `SwiftImage`
-      SwiftImage<Image>(url: feed.imageUrl)
-    }
-  }
-}                     
+SwiftImage<Image>(url: imageUrl)                   
 ```
 
 Framework will automatically load Image with `@ObservedObject` data once download completes.
@@ -30,16 +21,10 @@ Framework will automatically load Image with `@ObservedObject` data once downloa
 Trailing `config` block of `SwiftImage` is used for underlying ImageView configuration:
 
 ```swift
-var body: some View {
-  List {
-    ForEach(Feed.list) { feed in
-      SwiftImage(url: feed.imageUrl) { imageView in
-        imageView
-          .resizable()
-          .aspectRatio(1, contentMode: .fit)
-      }
-    }
-  }
+SwiftImage(url: imageUrl) { imageView in
+  imageView
+    .resizable()
+    .aspectRatio(1, contentMode: .fit)
 }
 ```
 
