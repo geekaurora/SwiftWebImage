@@ -57,5 +57,4 @@ public struct SwiftImage<V: View>: View {
     }
     return AnyView(imageView)
   }
-  
 }

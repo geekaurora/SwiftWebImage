@@ -19,8 +19,11 @@ struct ContentView : View {
   var body: some View {
     List {
       ForEach(Feed.list) { feed in
-        // Set `url` for `SwiftImage`
-        SwiftImage<Image>(url: feed.imageUrl)
+        SwiftImage(url: feed.imageUrl) { imageView in
+          imageView
+            .resizable()
+            .aspectRatio(1, contentMode: .fit)
+        }
       }
     }
   }
