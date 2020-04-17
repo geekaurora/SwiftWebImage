@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/CZUtils.svg?style=flat)](http://cocoapods.org/pods/CZUtils)
 [![Platform](https://img.shields.io/cocoapods/p/CZUtils.svg?style=flat)](http://cocoapods.org/pods/CZUtils)
 
-Progressive concurrent image downloader for SwiftUI BindingObject, with neat API and performant LRU mem/disk cache.
+Progressive concurrent image downloader for SwiftUI, with neat API and performant LRU mem/disk cache.
  
 ### Simple Usage
 
@@ -15,33 +15,31 @@ Just `import SwiftWebImage` and set `url` for `SwiftImage`:
 import SwiftWebImage
 
 var body: some View {
-    List {
-        ForEach(Feed.list.identified(by: \.id)) { feed in
-            // Set `url` for `SwiftImage`
-            SwiftImage(url: feed.imageUrl)
-        }
+  List {
+    ForEach(Feed.list) { feed in
+      // Set `url` for `SwiftImage`
+      SwiftImage<Image>(url: feed.imageUrl)
     }
-}                       
+  }
+}                     
 ```
 
-Framework will automatically load Image with `@ObjectBinding` data once download completes.
+Framework will automatically load Image with `@ObservedObject` data once download completes.
 
 #### How to config ImageView? 
 Trailing `config` block of `SwiftImage` is used for underlying ImageView configuration:
 
 ```swift
 var body: some View {
-    List {
-        ForEach(Feed.list.identified(by: \.id)) { feed in
-            SwiftImage(url: feed.imageUrl) { imageView in
-                AnyView(
-                    imageView
-                        .frame(height: 300)
-                        .clipped()
-                )
-            }
-        }
+  List {
+    ForEach(Feed.list) { feed in
+      SwiftImage(url: feed.imageUrl) { imageView in
+        imageView
+          .resizable()
+          .aspectRatio(1, contentMode: .fit)
+      }
     }
+  }
 }
 ```
 

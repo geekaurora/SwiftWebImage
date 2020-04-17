@@ -8,14 +8,18 @@
 import SwiftUI
 import CZWebImage
 
-public struct SwiftImage: View {
+/// SwiftUI image downloader with performant LRU mem/disk cache.
+///
+/// ### Usage
+
+public struct SwiftImage<V: View>: View {
   
   @ObservedObject private var imageDownloader = SwiftImageDownloader()
   
-  public typealias Config = (Image) -> AnyView
+  public typealias Config<V> = (Image) -> V where V: View
   
   private let placeholder: UIImage
-  private let config: Config?
+  private let config: Config<V>?
   
   /// Initializer of SwiftImage view with specified params.
   ///
@@ -25,7 +29,7 @@ public struct SwiftImage: View {
   ///   - config: Closure be used to config SwiftImage view.
   public init(url: String?,
               placeholder: UIImage = UIImage(),
-              config: Config? = nil) {
+              config: Config<V>? = nil) {
     self.placeholder = placeholder
     self.config = config
     imageDownloader.download(url: url)
@@ -35,7 +39,7 @@ public struct SwiftImage: View {
     let image: UIImage = imageDownloader.image ?? placeholder
     let imageView = Image(uiImage: image)
     if let config = config {
-      return config(imageView)
+      return AnyView(config(imageView))
     }
     return AnyView(imageView)
   }
