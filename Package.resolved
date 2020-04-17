@@ -27,6 +27,15 @@
           "revision": "2e9a878c5211bc0006c78ee328a4787d4ee142fa",
           "version": "3.0.7"
         }
+      },
+      {
+        "package": "SwiftUIKit",
+        "repositoryURL": "https://github.com/geekaurora/SwiftUIKit.git",
+        "state": {
+          "branch": null,
+          "revision": "89997f60c9fbae701b60cbe05f49a6d09573e88f",
+          "version": "1.0.3"
+        }
       }
     ]
   },

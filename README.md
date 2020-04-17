@@ -12,16 +12,16 @@ Progressive concurrent image downloader for SwiftUI, with neat API and performan
 Just `import SwiftWebImage` and set `url` for `SwiftImage`:
 
 ```swift
-SwiftImage<Image>(url: imageUrl)                   
+SwiftImage<Image>(imageUrl)                   
 ```
 
 Framework will automatically load Image with `@ObservedObject` data once download completes.
 
 #### How to config ImageView? 
-Trailing `config` block of `SwiftImage` is used for underlying ImageView configuration:
+Trailing `config` closure of `SwiftImage` is used for underlying ImageView configuration:
 
 ```swift
-SwiftImage(url: imageUrl) { imageView in
+SwiftImage(imageUrl) { imageView in
   imageView
     .resizable()
     .aspectRatio(1, contentMode: .fit)

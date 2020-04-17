@@ -8,24 +8,19 @@
 import SwiftUI
 import CZWebImage
 
-class SwiftImageDownloader: ObservableObject {
+public class SwiftImageDownloader: ObservableObject {
   
   @Published var image: UIImage?
   
-  private var url: String?
+  private var url: URL?
   
-  func download(url: String?) {
-    // Fetches image data and triggers reload by setting `image` on completion.
+  /// Fetches image data with `url` and triggers ui reload on completion.
+  public func download(url: URL) {
     self.url = url
-    guard let url = url,
-      let imageUrl = URL(string: url) else {
-        return
-    }
-    CZWebImageManager.shared.downloadImage(with: imageUrl) { (image, error, fromCache) in
+    
+    CZWebImageManager.shared.downloadImage(with: url) { (image, error, fromCache) in
       // Verify download imageUrl matches the original one.
-      guard self.url == url else {
-        return
-      }
+      guard self.url == url else { return }
       self.image = image
     }
   }
