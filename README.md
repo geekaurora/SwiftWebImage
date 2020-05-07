@@ -17,7 +17,7 @@ SwiftImage<Image>(imageUrl)
 
 Framework will automatically load Image with `@ObservedObject` data once download completes.
 
-#### How to config ImageView? 
+### How to config ImageView? 
 Trailing `config` closure of `SwiftImage` is used for underlying ImageView configuration:
 
 ```swift
@@ -27,6 +27,10 @@ SwiftImage(imageUrl) { imageView in
     .aspectRatio(1, contentMode: .fit)
 }
 ```
+
+### How to import library?
+
+Simply add  `https://github.com/geekaurora/SwiftWebImage.git` to your `Swift Packages` via project settings.
 
 ### Demo
 

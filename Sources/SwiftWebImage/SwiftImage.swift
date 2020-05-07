@@ -31,7 +31,7 @@ public struct SwiftImage<V: View>: View {
   
   @ObservedObject private var imageDownloader = SwiftImageDownloader()
   
-  public typealias Config<V> = (Image) -> V where V: View
+  public typealias Config<V> = (Image) -> V
   
   private let placeholder: UIImage
   private let config: Config<V>?
