@@ -2,12 +2,30 @@
   "object": {
     "pins": [
       {
+        "package": "CZHttpFile",
+        "repositoryURL": "https://github.com/geekaurora/CZHttpFile.git",
+        "state": {
+          "branch": null,
+          "revision": "ebc2c17f103448c9290597bd92f7ad5d85870e32",
+          "version": "1.3.1"
+        }
+      },
+      {
         "package": "CZNetworking",
         "repositoryURL": "https://github.com/geekaurora/CZNetworking.git",
         "state": {
           "branch": null,
-          "revision": "b2797f721eb560a76194518084ae23654140db12",
-          "version": "3.2.2"
+          "revision": "0bd225ef208682ca538395a097583d37ed36cd5e",
+          "version": "3.3.3"
+        }
+      },
+      {
+        "package": "CZTestUtils",
+        "repositoryURL": "https://github.com/geekaurora/CZTestUtils.git",
+        "state": {
+          "branch": null,
+          "revision": "fee1c04183de55cf07ce699e25bc6d27e308f49b",
+          "version": "1.1.2"
         }
       },
       {
@@ -15,8 +33,8 @@
         "repositoryURL": "https://github.com/geekaurora/CZUtils.git",
         "state": {
           "branch": null,
-          "revision": "0a8647b729a8eef0b649b9057a48568ce3d7a5c0",
-          "version": "3.2.1"
+          "revision": "f22a8591179bae6349d2ec514de47db13d10614c",
+          "version": "3.4.8"
         }
       },
       {
@@ -24,8 +42,8 @@
         "repositoryURL": "https://github.com/geekaurora/CZWebImage.git",
         "state": {
           "branch": null,
-          "revision": "9a918c0a690207bb39b12fb9fb5d5b2b80d7d497",
-          "version": "3.1.0"
+          "revision": "e97a2043e50c2bdc549143222b552e602cae70df",
+          "version": "3.6.0"
         }
       },
       {
@@ -33,8 +51,8 @@
         "repositoryURL": "https://github.com/geekaurora/SwiftUIKit.git",
         "state": {
           "branch": null,
-          "revision": "89997f60c9fbae701b60cbe05f49a6d09573e88f",
-          "version": "1.0.3"
+          "revision": "3d46476030aa29df3919cb26a273b489d0277a1d",
+          "version": "1.1.0"
         }
       }
     ]
