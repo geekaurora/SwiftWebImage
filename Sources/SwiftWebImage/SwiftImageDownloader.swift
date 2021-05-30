@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CZWebImage
+import CZUtils
 
 public class SwiftImageDownloader: ObservableObject {
   
@@ -18,10 +19,25 @@ public class SwiftImageDownloader: ObservableObject {
   public func download(url: URL) {
     self.url = url
     
-    CZWebImageManager.shared.downloadImage(with: url) { (image, error, fromCache) in
-      // Verify download imageUrl matches the original one.
-      guard self.url == url else { return }
-      self.image = image
-    }
+    URLSession.shared.dataTask(with: url) { [weak self] (data, response, error) in
+      guard self?.url == url,
+            let data = data.assertIfNil else {
+        return
+      }      
+      let image = UIImage(data: data)
+      MainQueueScheduler.async { [weak self] in
+        self?.image = image
+      }
+    }.resume()
+    
+//    CZWebImageManager.shared.downloadImage(with: url) { (image, error, fromCache) in
+//      // Verify download imageUrl matches the original one.
+//      guard self.url == url else { return }
+//
+//      MainQueueScheduler.async {
+//        self.image = image
+//      }
+//      // self.image = image
+//    }
   }
 }
